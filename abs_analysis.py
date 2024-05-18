@@ -18,6 +18,7 @@ import pandas as pd
 import numpy.polynomial.polynomial as poly
 import deviceStatus as DS
 
+"This icludes changed to the analysis"
 
 def init_wavelengths(wavelengths):
     """Initialise the set of wavelengths in the measurements.
