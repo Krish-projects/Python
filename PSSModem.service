@@ -1,0 +1,14 @@
+[Unit]
+Description=<Connecting to Internet via 4G Modem Cape>
+After=syslog.target network.target
+Before=AnalyserRun.service
+[Service]
+User=root
+Type=simple
+Restart=always
+RestartSec=60
+ExecStart=/usr/bin/python3 /home/debian/PSS/ModemSetup.py
+WorkingDirectory=/home/debian/PSS
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,10 @@
+[Unit]
+Description=start X and a qt application
+
+[Service]
+Type=forking
+ExecStart=/bin/bash /home/debian/PSS/startAnalyser.sh start
+ExecStop=/bin/bash /home/debian/PSS/startAnalyser.sh stop
+
+[Install]
+WantedBy=graphical.target
